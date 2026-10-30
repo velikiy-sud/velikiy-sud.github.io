@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Great Judgement — a strategy game inspired by TNO</title>
+<meta name="description" content="«The Great Judgement» is a free grand strategy game in the style of 1980s military terminals, inspired by the mod The New Order. 1962: the Ordensstaat Burgund against the Black League.">
+<meta property="og:title" content="The Great Judgement — chronicle of Europe's last days">
+<meta property="og:description" content="A free terminal strategy game inspired by TNO: Burgund against the Black League, civil war in the Reich, a nuclear race, 6 endings.">
+<meta property="og:image" content="img/shots/select.jpg">
+<meta name="theme-color" content="#000602">
+<link rel="alternate" hreflang="ru" href="https://velikiy-sud.github.io/">
+<link rel="alternate" hreflang="en" href="https://velikiy-sud.github.io/en/">
+<link rel="icon" type="image/png" href="../img/icon.png">
+<link rel="preload" href="../fonts/DejaVuSansMono.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="crt">
+
+  <figure class="map-corner" aria-hidden="true">
+    <img src="img/europe.png" alt="" width="1100" height="820">
+  </figure>
+
+  <header class="status">
+    <span class="left">THE GREAT JUDGEMENT // VERSION 1.1 // <span id="clock">01.01.1962</span></span>
+    <nav>
+      <a href="#about"><b>F1</b> ABOUT</a>
+      <a href="#story"><b>F2</b> STORY</a>
+      <a href="#sides"><b>F3</b> SIDES</a>
+      <a href="#shots"><b>F4</b> SCREENS</a>
+      <a href="#download"><b>F5</b> DOWNLOAD</a>
+      <a class="social" href="https://t.me/tnolarp" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1a11 11 0 1 0 0 22 11 11 0 0 0 0-22Zm5.1 6.6-1.8 8.6c-.1.6-.5.8-1 .5l-2.8-2.1-1.3 1.3c-.2.2-.3.3-.6.3l.2-2.9 5.3-4.8c.2-.2 0-.3-.3-.1l-6.6 4.1-2.8-.9c-.6-.2-.6-.6.1-.9l11-4.2c.5-.2 1 .1.6 1.1Z"/></svg>TG</a>
+      <a class="social" href="https://boosty.to/tnov" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M6 1h12a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H6a5 5 0 0 1-5-5V6a5 5 0 0 1 5-5Zm2 4.5v13h5.2c2.6 0 4.3-1.4 4.3-3.6 0-1.6-.9-2.7-2.4-3.1 1.1-.5 1.8-1.5 1.8-2.8 0-2.1-1.6-3.5-4.1-3.5H8Zm2.6 2.1h2.1c1.2 0 1.9.6 1.9 1.6s-.7 1.6-1.9 1.6h-2.1V7.6Zm0 5.2h2.4c1.4 0 2.1.6 2.1 1.8s-.8 1.8-2.1 1.8h-2.4v-3.6Z"/></svg>BOOSTY</a>
+      <a class="lang" href="../" hreflang="ru" lang="ru">[RU] РУССКИЙ</a>
+      <button class="theme-btn" id="theme" type="button" title="Phosphor colour (C key)">[C] GREEN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1><img class="logo-en" src="img/logo.png" alt="THE GREAT JUDGEMENT" width="1094" height="99"></h1>
+      <div class="sub">CHRONICLE OF EUROPE'S LAST DAYS // 1962 // TERMINAL EDITION</div>
+      <p>A grand strategy game in the style of 1980s military terminals, inspired by the Hearts of Iron IV mod «The New Order: Last Days of Europe».</p>
+      <p>The Reich won the war, but it is rotting from within. The Führer is dying. In the west the SS Order bides its time; in the east the Black League rises from the ruins. You lead one of them to the final war for Europe.</p>
+      <div class="actions">
+        <a class="btn" href="../download/the-great-judgement-1.1-windows.zip">[ENTER] DOWNLOAD FOR WINDOWS<small>version 1.1 · English · zip · 15 MB · no Python needed</small></a>
+        <a class="btn ghost" href="#story">[F2] READ THE STORY<small>what happens in 1962</small></a>
+      </div>
+      <div class="links">
+        <a class="btn link" href="https://t.me/tnolarp" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1a11 11 0 1 0 0 22 11 11 0 0 0 0-22Zm5.1 6.6-1.8 8.6c-.1.6-.5.8-1 .5l-2.8-2.1-1.3 1.3c-.2.2-.3.3-.6.3l.2-2.9 5.3-4.8c.2-.2 0-.3-.3-.1l-6.6 4.1-2.8-.9c-.6-.2-.6-.6.1-.9l11-4.2c.5-.2 1 .1.6 1.1Z"/></svg>GAME'S TELEGRAM<small>t.me/tnolarp · news and updates (in Russian)</small></a>
+        <a class="btn link" href="https://boosty.to/tnov" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M6 1h12a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H6a5 5 0 0 1-5-5V6a5 5 0 0 1 5-5Zm2 4.5v13h5.2c2.6 0 4.3-1.4 4.3-3.6 0-1.6-.9-2.7-2.4-3.1 1.1-.5 1.8-1.5 1.8-2.8 0-2.1-1.6-3.5-4.1-3.5H8Zm2.6 2.1h2.1c1.2 0 1.9.6 1.9 1.6s-.7 1.6-1.9 1.6h-2.1V7.6Zm0 5.2h2.4c1.4 0 2.1.6 2.1 1.8s-.8 1.8-2.1 1.8h-2.4v-3.6Z"/></svg>SUPPORT THE DEVELOPER<small>boosty.to/tnov</small></a>
+      </div>
+      <div class="prompt">&gt; READY FOR COMMANDS<span class="cursor"></span></div>
+    </section>
+
+    <section class="win" id="about">
+      <h2>[F1] ABOUT THE GAME</h2>
+      <p>A black screen, green monospaced text, box-drawing frames, a CRT case with rounded corners, phosphor glow and a rolling scan line. Under this shell is a full real-time-with-pause strategy game: you run a country day by day from 1 January 1962.</p>
+      <div class="cols">
+        <div>
+          <h3>What awaits you</h3>
+          <ul class="term">
+            <li><span class="bright">Two sides</span> with different paths: the Ordensstaat Burgund absorbs the collapsing Reich, the Black League gathers Russia piece by piece.</li>
+            <li><span class="bright">A detailed map of Europe</span> with the regions and borders of 1962: conquered lands pass to you region by region.</li>
+            <li><span class="bright">Dozens of events and superevents</span> with ASCII animations and synthesised sound: sirens, marches, teletype, a mushroom cloud.</li>
+            <li><span class="bright">Army and diplomacy:</span> conscription, exercises, factories, doctrines, talks, espionage, bribery, puppets.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>And above all</h3>
+          <ul class="term">
+            <li><span class="bright">A nuclear programme:</span> uranium, facilities, leaks and accidents, the test, warheads, bombers and missiles.</li>
+            <li><span class="bright">Escalation:</span> manoeuvres, border shootouts, false alarms, casus belli. The war moves along a front line and most often ends in a nuclear exchange.</li>
+            <li><span class="bright">Internal politics:</span> factions, loyalty, purges, a «Night of the Long Knives».</li>
+            <li><span class="bright">Six endings</span> and an epilogue that retells your decisions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="win" id="story">
+      <h2>[F2] STORY</h2>
+      <p>Germany and Japan won the Second World War. For twenty years the Reich has ruled from the Atlantic to the Urals, but it is held together only by the name of one man. When he is gone, Europe will fall into the abyss, and someone has to reach the edge first.</p>
+      <ol class="chronicle">
+        <li><time>1962</time><span>The Reich looks invincible, but its economy is cracking, and the heirs are fighting around the ageing Führer: Bormann and the Party Chancellery, the reformer Speer with the industrialists, Reichsmarschall Göring with the army and the Luftwaffe, Heydrich and the SS.</span></li>
+        <li><time>DEATH AT THE SUMMIT</time><span>At 3:40 in the morning Adolf Hitler's heart stops. Berlin burns, the Reich breaks into shards, the Reichskommissariats are left without a master. The turmoil begins.</span></li>
+        <li><time>WEST</time><span>In Brussels Reichsführer Heinrich Himmler has been waiting for this day. His Ordensstaat Burgund — an SS order-state and one vast concentration camp — sends its divisions into Germany, while the regular army marches into France.</span></li>
+        <li><time>EAST</time><span>In Vologda, amid the ruins of Western Russia, the Black League has dug in — General Karbyshev's officers' clique, ruled by Supreme Commander Yazov. It will gather the atamanates, soviets, monarchies and enclaves by word or by fire.</span></li>
+        <li><time>RACE</time><span>Both sides secretly build the bomb. Tension on the new border grows: manoeuvres, shootouts, false alarms. Neither Burgund nor the League accepts ultimatums.</span></li>
+        <li><time>THE GREAT JUDGEMENT</time><span>The League believes Russia must come to the final war with the Germans united, indivisible and invincible. Who starts it first and what is left of Europe afterwards is up to you.</span></li>
+      </ol>
+    </section>
+
+    <section class="win" id="sides">
+      <h2>[F3] CHOOSE A SIDE</h2>
+      <div class="cols">
+        <article class="side burgundy">
+          <img src="../img/burgundy.png" alt="Emblem of the Ordensstaat Burgund" width="150" height="150">
+          <h3>[1] ORDENSSTAAT BURGUND</h3>
+          <span class="tag">CAPITAL: BRUSSELS</span>
+          <p>The SS Order-State of Reichsführer Heinrich Himmler: Belgium and north-eastern France.</p>
+          <p>The whole country is one vast concentration camp: factories and mines run on prisoner labour, an informer watches everyone, and the knights of the SS Order rule. When the Führer dies, Heydrich and the SS in Germany will wait for orders from Brussels.</p>
+          <p class="meta">STYLE OF PLAY: strong industry, few people. «Absorbing Germany» and «Conquest of France» open with the civil war in the Reich. The path ends with «The Fall of Berlin».</p>
+        </article>
+        <article class="side league">
+          <img src="../img/league.png" alt="Emblem of the Black League" width="150" height="150">
+          <h3>[2] BLACK LEAGUE</h3>
+          <span class="tag">CAPITAL: VOLOGDA</span>
+          <p>An officers' clique founded by General Karbyshev and entrenched in Vologda amid the ruins of Western Russia. In practice it is ruled by Supreme Commander Dmitry Yazov.</p>
+          <p>The country has fallen apart into atamanates, soviets and enclaves. The League will gather them by word or by fire, and then lead them West. Its rivals are the Gorky Directorate, Rokossovsky in the Urals and Kirov's Tyumen Soviet.</p>
+          <p class="meta">STYLE OF PLAY: huge reserves, weak industry. «Unify Russia» is available almost at once. The path ends with «Banner over the Kremlin».</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="win" id="shots">
+      <h2>[F4] SCREENSHOTS</h2>
+      <div class="gallery">
+        <figure><a href="img/shots/select.jpg"><img src="img/shots/select_s.jpg" alt="Side selection screen" loading="lazy" width="640" height="439"></a><figcaption>Choosing a side</figcaption></figure>
+        <figure><a href="img/shots/map.jpg"><img src="img/shots/map_s.jpg" alt="Map of Europe, 1962" loading="lazy" width="640" height="439"></a><figcaption>Map of Europe, 1962</figcaption></figure>
+        <figure><a href="img/shots/smuta.jpg"><img src="img/shots/smuta_s.jpg" alt="Superevent «Death at the Summit»" loading="lazy" width="640" height="439"></a><figcaption>Superevent: turmoil in the Reich</figcaption></figure>
+        <figure><a href="img/shots/unification.jpg"><img src="img/shots/unification_s.jpg" alt="Unifying Russia" loading="lazy" width="640" height="439"></a><figcaption>League: unifying Russia</figcaption></figure>
+        <figure><a href="img/shots/kremlin.jpg"><img src="img/shots/kremlin_s.jpg" alt="Superevent «Banner over the Kremlin»" loading="lazy" width="640" height="965"></a><figcaption>Superevent: banner over the Kremlin</figcaption></figure>
+        <figure><a href="img/shots/nuke.jpg"><img src="img/shots/nuke_s.jpg" alt="Nuclear test" loading="lazy" width="640" height="439"></a><figcaption>The first nuclear test</figcaption></figure>
+        <figure><a href="img/shots/front.jpg"><img src="img/shots/front_s.jpg" alt="War along the front line" loading="lazy" width="640" height="439"></a><figcaption>War along the front line</figcaption></figure>
+        <figure><a href="img/shots/judgement.jpg"><img src="img/shots/judgement_s.jpg" alt="Superevent «The Great Judgement»" loading="lazy" width="640" height="439"></a><figcaption>Superevent: «The Great Judgement»</figcaption></figure>
+        <figure><a href="img/shots/vlasov.jpg"><img src="img/shots/vlasov_s.jpg" alt="Reckoning with the Vlasovites" loading="lazy" width="640" height="439"></a><figcaption>Reckoning with the Vlasovites</figcaption></figure>
+        <figure><a href="img/shots/trails.jpg"><img src="img/shots/trails_s.jpg" alt="Missile trails on the map" loading="lazy" width="640" height="439"></a><figcaption>Nuclear exchange: missile trails</figcaption></figure>
+        <figure><a href="img/shots/launch.jpg"><img src="img/shots/launch_s.jpg" alt="Countdown before launch" loading="lazy" width="640" height="439"></a><figcaption>First strike: one minute to launch</figcaption></figure>
+        <figure><a href="img/shots/epilogue.jpg"><img src="img/shots/epilogue_s.jpg" alt="Epilogue of a game" loading="lazy" width="640" height="439"></a><figcaption>An epilogue with your decisions</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="win" id="download">
+      <h2>[F5] DOWNLOAD</h2>
+      <div class="cols">
+        <div>
+          <h3>Windows 10/11 (64-bit)</h3>
+          <p>Unpack the whole archive and run <span class="bright">«The Great Judgement.exe»</span>. You do not need to install Python, it is already inside.</p>
+          <div class="actions">
+            <a class="btn" href="../download/the-great-judgement-1.1-windows.zip">DOWNLOAD FOR WINDOWS<small>English · zip · 15 MB</small></a>
+            <a class="btn ghost" href="../download/the-great-judgement-1.1-source.zip">SOURCE CODE<small>Python 3.9+ · Linux, macOS</small></a>
+          </div>
+          <p class="note"><b>Language:</b> the game starts in English. Press <kbd>L</kbd> on the side-selection screen to switch to Russian and back (the game restarts). The Russian archive is on the <a href="../#download" hreflang="ru">Russian page</a>.</p>
+          <p class="note"><b>New in 1.1:</b> an English version of the whole game; the «Great Judgement» superevent: the Reichskommissariats and Göring's troops fight alongside the Order as one state; lands change hands along the front line, neighbours only; the reckoning with the Vlasovites; a more visible nuclear programme with missile trails on the map; a more generous economy.</p>
+          <p class="note"><b>Windows may warn you:</b> «Windows protected your PC». The exe has no paid digital signature. Click «More info», then «Run anyway».</p>
+          <p class="dim">From source: <kbd>pip install -r requirements.txt</kbd>, then <kbd>python main.py</kbd>. The English source archive starts in English (file <kbd>lang.txt</kbd>).</p>
+        </div>
+        <div>
+          <h3>Controls</h3>
+          <table class="keys">
+            <tr><td>SPACE</td><td>pause / run time</td></tr>
+            <tr><td>1–5, + / −</td><td>speed: from one day per second to 25 days per second</td></tr>
+            <tr><td>F1…F8, TAB</td><td>sidebar tabs</td></tr>
+            <tr><td>↑ ↓  ← →</td><td>select a row and an action</td></tr>
+            <tr><td>ENTER</td><td>perform an action, choose an option</td></tr>
+            <tr><td>C</td><td>screen colour: green, purple, red, cyan</td></tr>
+            <tr><td>L</td><td>language: English / Russian (side-selection screen)</td></tr>
+            <tr><td>F11</td><td>full screen</td></tr>
+          </table>
+          <p class="note"><b>Tip:</b> the final assaults on Berlin and the Kremlin need a strong army. Operations eat up men and equipment, so replenish the army between conquests.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>«The Great Judgement» is a free fan project. It is not affiliated with the team behind The New Order mod or with Paradox Interactive, and it is not for sale.</p>
+    <p>Map outlines: Natural Earth (public domain). Font: DejaVu Sans Mono (<a href="../fonts/LICENSE-DejaVu.txt">licence</a>).</p>
+    <p class="foot-links"><a class="social" href="https://t.me/tnolarp" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1a11 11 0 1 0 0 22 11 11 0 0 0 0-22Zm5.1 6.6-1.8 8.6c-.1.6-.5.8-1 .5l-2.8-2.1-1.3 1.3c-.2.2-.3.3-.6.3l.2-2.9 5.3-4.8c.2-.2 0-.3-.3-.1l-6.6 4.1-2.8-.9c-.6-.2-.6-.6.1-.9l11-4.2c.5-.2 1 .1.6 1.1Z"/></svg>Game's Telegram: t.me/tnolarp</a> <a class="social" href="https://boosty.to/tnov" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M6 1h12a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H6a5 5 0 0 1-5-5V6a5 5 0 0 1 5-5Zm2 4.5v13h5.2c2.6 0 4.3-1.4 4.3-3.6 0-1.6-.9-2.7-2.4-3.1 1.1-.5 1.8-1.5 1.8-2.8 0-2.1-1.6-3.5-4.1-3.5H8Zm2.6 2.1h2.1c1.2 0 1.9.6 1.9 1.6s-.7 1.6-1.9 1.6h-2.1V7.6Zm0 5.2h2.4c1.4 0 2.1.6 2.1 1.8s-.8 1.8-2.1 1.8h-2.4v-3.6Z"/></svg>Support the developer: boosty.to/tnov</a></p>
+    <p>&gt; END OF TRANSMISSION<span class="cursor"></span></p>
+  </footer>
+</div>
+
+<dialog class="viewer" id="viewer"><button type="button" id="viewer-close">[ESC] CLOSE</button><img id="viewer-img" alt=""></dialog>
+
+<script>
+(function () {
+  // Phosphor colour, like the C key in the game
+  var themes = [["green", "GREEN"], ["purple", "PURPLE"], ["red", "RED"], ["blue", "CYAN"]];
+  var btn = document.getElementById("theme");
+  var i = 0;
+  try { i = Math.max(0, themes.findIndex(function (t) { return t[0] === localStorage.getItem("theme"); })); } catch (e) {}
+  function apply() {
+    document.documentElement.setAttribute("data-theme", themes[i][0]);
+    btn.textContent = "[C] " + themes[i][1];
+    try { localStorage.setItem("theme", themes[i][0]); } catch (e) {}
+  }
+  function next() { i = (i + 1) % themes.length; apply(); }
+  apply();
+  btn.addEventListener("click", next);
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey || e.metaKey || e.altKey || /input|textarea/i.test(e.target.tagName)) return;
+    if (e.code === "KeyC") next();
+  });
+
+  // Game clock in the status bar: one day per second, like speed 1
+  var clock = document.getElementById("clock");
+  var d = new Date(1962, 0, 1);
+  setInterval(function () {
+    d.setDate(d.getDate() + 1);
+    clock.textContent = String(d.getDate()).padStart(2, "0") + "." + String(d.getMonth() + 1).padStart(2, "0") + "." + d.getFullYear();
+  }, 1000);
+
+  // Screenshot viewer
+  var dlg = document.getElementById("viewer");
+  var img = document.getElementById("viewer-img");
+  if (dlg.showModal) {
+    document.querySelectorAll(".gallery a").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        img.src = a.getAttribute("href");
+        img.alt = a.querySelector("img").alt;
+        dlg.showModal();
+      });
+    });
+    document.getElementById("viewer-close").addEventListener("click", function () { dlg.close(); });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+  }
+})();
+</script>
+</body>
+</html>

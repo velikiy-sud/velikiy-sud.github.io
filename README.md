@@ -1,9 +1,11 @@
-# Великий суд
+# Великий суд / The Great Judgement
 
 Сайт бесплатной терминальной стратегии «Великий суд» по мотивам мода The New Order для Hearts of Iron IV.
 
-Сайт: https://velikiy-sud.github.io/
+Сайт: https://velikiy-sud.github.io/ · English: https://velikiy-sud.github.io/en/
 
-Скачать игру: [Windows](download/velikiy-sud-1.0-windows.zip) · [исходники](download/velikiy-sud-1.0-source.zip)
+Скачать игру (1.1): [Windows](download/velikiy-sud-1.1-windows.zip) · [исходники](download/velikiy-sud-1.1-source.zip)
+
+Download (English, 1.1): [Windows](download/the-great-judgement-1.1-windows.zip) · [source](download/the-great-judgement-1.1-source.zip)
 
 Фанатский проект, не связан с командой TNO и Paradox Interactive.

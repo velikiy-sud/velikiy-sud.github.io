@@ -275,3 +275,8 @@ dialog.viewer button { position: sticky; top: 0; float: right; font: inherit; ba
 .foot-links { display: flex; flex-wrap: wrap; gap: 6px 22px; }
 .foot-links a { color: var(--normal); text-decoration: none; }
 .foot-links a:hover { color: var(--bright); text-decoration: underline; }
+
+/* ---------- переключатель языка ---------- */
+.status nav a.lang { color: var(--bright); border: 1px solid var(--faint); padding: 0 6px; }
+.status nav a.lang:hover { color: var(--bg); background: var(--normal); }
+.hero h1 img.logo-en { width: min(100%, 760px); }
