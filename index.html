@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Великий суд — стратегия по мотивам TNO</title>
+<meta name="description" content="«Великий суд» — бесплатная глобальная стратегия в эстетике терминалов 80-х по мотивам мода The New Order. 1962 год, Орденштат Бургундия против Чёрной Лиги.">
+<meta property="og:title" content="Великий суд — хроника последних дней Европы">
+<meta property="og:description" content="Бесплатная терминальная стратегия по мотивам TNO: Бургундия против Чёрной Лиги, гражданская война в Рейхе, ядерная гонка, 6 концовок.">
+<meta property="og:image" content="img/shots/select.jpg">
+<meta name="theme-color" content="#000602">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="preload" href="fonts/DejaVuSansMono.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="crt">
+
+  <figure class="map-corner" aria-hidden="true">
+    <img src="img/europe.png" alt="" width="1100" height="820">
+  </figure>
+
+  <header class="status">
+    <span class="left">ВЕЛИКИЙ СУД // ВЕРСИЯ 1.0 // <span id="clock">01.01.1962</span></span>
+    <nav>
+      <a href="#about"><b>F1</b> ОБ ИГРЕ</a>
+      <a href="#story"><b>F2</b> СЮЖЕТ</a>
+      <a href="#sides"><b>F3</b> СТОРОНЫ</a>
+      <a href="#shots"><b>F4</b> КАДРЫ</a>
+      <a href="#download"><b>F5</b> СКАЧАТЬ</a>
+      <button class="theme-btn" id="theme" type="button" title="Цвет люминофора (клавиша C)">[C] ЗЕЛЁНЫЙ</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1><img src="img/logo.png" alt="ВЕЛИКИЙ СУД" width="637" height="99"></h1>
+      <div class="sub">ХРОНИКА ПОСЛЕДНИХ ДНЕЙ ЕВРОПЫ // 1962 // ТЕРМИНАЛЬНАЯ ВЕРСИЯ</div>
+      <p>Глобальная стратегия в эстетике военных терминалов 80-х по мотивам мода для Hearts of Iron IV «The New Order: Last Days of Europe».</p>
+      <p>Рейх выиграл войну, но гниёт изнутри. Фюрер при смерти. На западе ждёт своего часа орден СС, на востоке из руин поднимается Чёрная Лига. Вы ведёте одну из сторон к последней войне за Европу.</p>
+      <div class="actions">
+        <!-- ССЫЛКА НА СКАЧИВАНИЕ №1 (Windows). Замените href, если архив лежит в другом месте -->
+        <a class="btn" href="download/velikiy-sud-1.0-windows.zip">[ENTER] СКАЧАТЬ ДЛЯ WINDOWS<small>версия 1.0 · zip · 15 МБ · Python не нужен</small></a>
+        <a class="btn ghost" href="#story">[F2] ЧИТАТЬ СЮЖЕТ<small>что происходит в 1962 году</small></a>
+      </div>
+      <div class="prompt">&gt; ГОТОВ К ПРИЁМУ КОМАНД<span class="cursor"></span></div>
+    </section>
+
+    <section class="win" id="about">
+      <h2>[F1] ОБ ИГРЕ</h2>
+      <p>Чёрный экран, зелёный моноширинный текст, рамки из псевдографики, корпус кинескопа со скруглёнными углами, свечение люминофора и бегущая полоса развёртки. Под этой оболочкой — полноценная стратегия в реальном времени с паузой: вы управляете страной день за днём с 1 января 1962 года.</p>
+      <div class="cols">
+        <div>
+          <h3>Что вас ждёт</h3>
+          <ul class="term">
+            <li><span class="bright">Две стороны</span> с разными ветками: Орденштат Бургундия поглощает распавшийся Рейх, Чёрная Лига собирает Россию по кускам.</li>
+            <li><span class="bright">Подробная карта Европы</span> с областями и границами 1962 года: захваченные земли переходят к вам область за областью.</li>
+            <li><span class="bright">Сотни ивентов и суперивенты</span> с ASCII-анимациями и синтезированным звуком: сирены, марши, телетайп, ядерный гриб.</li>
+            <li><span class="bright">Армия и дипломатия:</span> призыв, учения, заводы, доктрины, переговоры, шпионаж, подкуп, марионетки.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>И главное</h3>
+          <ul class="term">
+            <li><span class="bright">Ядерная программа:</span> уран, объекты, утечки и аварии, испытание, боеголовки, бомбардировщики и ракеты.</li>
+            <li><span class="bright">Эскалация:</span> манёвры, перестрелки на границе, ложные тревоги, casus belli. Война идёт по линии фронта и чаще всего кончается ядерным обменом.</li>
+            <li><span class="bright">Внутренняя политика:</span> фракции, лояльность, чистки, «Ночь длинных ножей».</li>
+            <li><span class="bright">Шесть концовок</span> и эпилог, который пересказывает ваши решения.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="win" id="story">
+      <h2>[F2] СЮЖЕТ</h2>
+      <p>Германия и Япония победили во Второй мировой. Двадцать лет Рейх правит от Атлантики до Урала, но держится только на имени одного человека. Когда его не станет, Европа сорвётся в пропасть, и кто-то должен оказаться на краю первым.</p>
+      <ol class="chronicle">
+        <li><time>1962</time><span>Рейх выглядит несокрушимым, но экономика трещит, а вокруг стареющего фюрера грызутся наследники: Борман и партийная канцелярия, реформатор Шпеер с промышленниками, рейхсмаршал Геринг с армией и Люфтваффе, Гейдрих и СС.</span></li>
+        <li><time>СМЕРТЬ НА ВЕРШИНЕ</time><span>В 3:40 ночи сердце Адольфа Гитлера останавливается. Берлин горит, Рейх распадается на осколки, рейхскомиссариаты остаются без хозяина. Начинается смута.</span></li>
+        <li><time>ЗАПАД</time><span>В Брюсселе рейхсфюрер Генрих Гиммлер ждал этого дня. Его Орденштат Бургундия — государство-орден СС и один огромный концлагерь — двигает дивизии на Германию, а обычная армия идёт во Францию.</span></li>
+        <li><time>ВОСТОК</time><span>В Вологде среди руин Западной России окопалась Чёрная Лига — офицерская клика генерала Карбышева, которой правит главковерх Язов. Атаманства, советы, монархии и анклавы она соберёт словом или огнём.</span></li>
+        <li><time>ГОНКА</time><span>Обе стороны тайно строят бомбу. Напряжённость на новой границе растёт: манёвры, перестрелки, ложные тревоги. Ни Бургундия, ни Лига не принимают ультиматумов.</span></li>
+        <li><time>ВЕЛИКИЙ СУД</time><span>Лига верит, что Россия должна прийти к последней войне с немцами единой, неделимой и непобедимой. Кто начнёт её первым и что останется от Европы после — решаете вы.</span></li>
+      </ol>
+    </section>
+
+    <section class="win" id="sides">
+      <h2>[F3] ВЫБОР СТОРОНЫ</h2>
+      <div class="cols">
+        <article class="side burgundy">
+          <img src="img/burgundy.png" alt="Герб Орденштата Бургундия" width="150" height="150">
+          <h3>[1] ОРДЕНШТАТ БУРГУНДИЯ</h3>
+          <span class="tag">СТОЛИЦА: БРЮССЕЛЬ</span>
+          <p>Орденское государство СС рейхсфюрера Генриха Гиммлера: Бельгия и северо-восток Франции.</p>
+          <p>Вся страна — один огромный концлагерь: заводы и шахты работают на труде заключённых, за каждым следит доносчик, правят рыцари Ордена СС. Когда фюрер умрёт, Гейдрих и СС в Германии будут ждать приказов из Брюсселя.</p>
+          <p class="meta">СТИЛЬ ИГРЫ: сильная промышленность, мало людей. «Поглощение Германии» и «Захват Франции» открываются с гражданской войной в Рейхе. Финал ветки — «Падение Берлина».</p>
+        </article>
+        <article class="side league">
+          <img src="img/league.png" alt="Герб Чёрной Лиги" width="150" height="150">
+          <h3>[2] ЧЁРНАЯ ЛИГА</h3>
+          <span class="tag">СТОЛИЦА: ВОЛОГДА</span>
+          <p>Офицерская клика, основанная генералом Карбышевым и укрепившаяся в Вологде среди руин Западной России. Фактически ею правит главковерх Дмитрий Язов.</p>
+          <p>Страна распалась на атаманства, советы и анклавы. Лига соберёт их словом или огнём, а потом поведёт на Запад. Соперники — Горьковская директория, Рокоссовский на Урале и Тюменский совет Кирова.</p>
+          <p class="meta">СТИЛЬ ИГРЫ: огромные резервы, слабая промышленность. «Объединение России» доступно почти сразу. Финал ветки — «Знамя над Кремлём».</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="win" id="shots">
+      <h2>[F4] КАДРЫ</h2>
+      <div class="gallery">
+        <figure><a href="img/shots/select.jpg"><img src="img/shots/select_s.jpg" alt="Экран выбора стороны" loading="lazy" width="640" height="439"></a><figcaption>Выбор стороны</figcaption></figure>
+        <figure><a href="img/shots/map.jpg"><img src="img/shots/map_s.jpg" alt="Карта Европы 1962 года" loading="lazy" width="640" height="439"></a><figcaption>Карта Европы, 1962</figcaption></figure>
+        <figure><a href="img/shots/smuta.jpg"><img src="img/shots/smuta_s.jpg" alt="Суперивент «Смута»" loading="lazy" width="640" height="439"></a><figcaption>Суперивент: смута в Рейхе</figcaption></figure>
+        <figure><a href="img/shots/unification.jpg"><img src="img/shots/unification_s.jpg" alt="Объединение России" loading="lazy" width="640" height="439"></a><figcaption>Лига: объединение России</figcaption></figure>
+        <figure><a href="img/shots/kremlin.jpg"><img src="img/shots/kremlin_s.jpg" alt="Суперивент «Знамя над Кремлём»" loading="lazy" width="640" height="965"></a><figcaption>Суперивент: знамя над Кремлём</figcaption></figure>
+        <figure><a href="img/shots/nuke.jpg"><img src="img/shots/nuke_s.jpg" alt="Ядерное испытание" loading="lazy" width="640" height="439"></a><figcaption>Первое ядерное испытание</figcaption></figure>
+        <figure><a href="img/shots/front.jpg"><img src="img/shots/front_s.jpg" alt="Война по линии фронта" loading="lazy" width="640" height="439"></a><figcaption>Война по линии фронта</figcaption></figure>
+        <figure><a href="img/shots/launch.jpg"><img src="img/shots/launch_s.jpg" alt="Обратный отсчёт перед пуском" loading="lazy" width="640" height="439"></a><figcaption>Первый удар: минута до пуска</figcaption></figure>
+        <figure><a href="img/shots/epilogue.jpg"><img src="img/shots/epilogue_s.jpg" alt="Эпилог партии" loading="lazy" width="640" height="439"></a><figcaption>Эпилог с вашими решениями</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="win" id="download">
+      <h2>[F5] СКАЧАТЬ</h2>
+      <div class="cols">
+        <div>
+          <h3>Windows 10/11 (64 бит)</h3>
+          <p>Распакуйте архив целиком и запустите <span class="bright">«Великий суд.exe»</span>. Python ставить не нужно, он уже внутри.</p>
+          <div class="actions">
+            <!-- ССЫЛКА НА СКАЧИВАНИЕ №2 (Windows) — та же, что наверху -->
+            <a class="btn" href="download/velikiy-sud-1.0-windows.zip">СКАЧАТЬ ДЛЯ WINDOWS<small>zip · 15 МБ</small></a>
+            <!-- ССЫЛКА НА ИСХОДНИКИ (Python, для Linux/macOS) -->
+            <a class="btn ghost" href="download/velikiy-sud-1.0-source.zip">ИСХОДНИКИ<small>Python 3.9+ · Linux, macOS</small></a>
+          </div>
+          <p class="note"><b>Windows может предупредить:</b> «Система Windows защитила ваш компьютер». У exe нет платной цифровой подписи. Нажмите «Подробнее», затем «Выполнить в любом случае».</p>
+          <p class="dim">Из исходников: <kbd>pip install -r requirements.txt</kbd>, затем <kbd>python main.py</kbd>. На Windows хватит двойного клика по «Великий суд.pyw».</p>
+        </div>
+        <div>
+          <h3>Управление</h3>
+          <table class="keys">
+            <tr><td>ПРОБЕЛ</td><td>пауза / ход времени</td></tr>
+            <tr><td>1–5, + / −</td><td>скорость: от дня в секунду до 25 дней в секунду</td></tr>
+            <tr><td>F1…F8, TAB</td><td>вкладки боковой панели</td></tr>
+            <tr><td>↑ ↓  ← →</td><td>выбор строки и действия</td></tr>
+            <tr><td>ENTER</td><td>выполнить действие, выбрать вариант</td></tr>
+            <tr><td>C</td><td>цвет экрана: зелёный, фиолетовый, красный, голубой</td></tr>
+            <tr><td>F11</td><td>во весь экран</td></tr>
+          </table>
+          <p class="note"><b>Совет:</b> финальные штурмы Берлина и Кремля требуют сильной армии. Операции съедают людей и технику, пополняйте армию между захватами.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>«Великий суд» — бесплатный фанатский проект. Он не связан с командой мода The New Order и с Paradox Interactive и не продаётся.</p>
+    <p>Контуры карты: Natural Earth (общественное достояние). Шрифт: DejaVu Sans Mono (<a href="fonts/LICENSE-DejaVu.txt">лицензия</a>).</p>
+    <p>&gt; КОНЕЦ ПЕРЕДАЧИ<span class="cursor"></span></p>
+  </footer>
+</div>
+
+<dialog class="viewer" id="viewer"><button type="button" id="viewer-close">[ESC] ЗАКРЫТЬ</button><img id="viewer-img" alt=""></dialog>
+
+<script>
+(function () {
+  // Цвет люминофора, как клавиша C в игре
+  var themes = [["green", "ЗЕЛЁНЫЙ"], ["purple", "ФИОЛЕТОВЫЙ"], ["red", "КРАСНЫЙ"], ["blue", "ГОЛУБОЙ"]];
+  var btn = document.getElementById("theme");
+  var i = 0;
+  try { i = Math.max(0, themes.findIndex(function (t) { return t[0] === localStorage.getItem("theme"); })); } catch (e) {}
+  function apply() {
+    document.documentElement.setAttribute("data-theme", themes[i][0]);
+    btn.textContent = "[C] " + themes[i][1];
+    try { localStorage.setItem("theme", themes[i][0]); } catch (e) {}
+  }
+  function next() { i = (i + 1) % themes.length; apply(); }
+  apply();
+  btn.addEventListener("click", next);
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey || e.metaKey || e.altKey || /input|textarea/i.test(e.target.tagName)) return;
+    if (e.code === "KeyC") next();
+  });
+
+  // Игровые часы в строке состояния: день идёт раз в секунду, как на скорости 1
+  var clock = document.getElementById("clock");
+  var d = new Date(1962, 0, 1);
+  setInterval(function () {
+    d.setDate(d.getDate() + 1);
+    clock.textContent = String(d.getDate()).padStart(2, "0") + "." + String(d.getMonth() + 1).padStart(2, "0") + "." + d.getFullYear();
+  }, 1000);
+
+  // Просмотр кадров
+  var dlg = document.getElementById("viewer");
+  var img = document.getElementById("viewer-img");
+  if (dlg.showModal) {
+    document.querySelectorAll(".gallery a").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        img.src = a.getAttribute("href");
+        img.alt = a.querySelector("img").alt;
+        dlg.showModal();
+      });
+    });
+    document.getElementById("viewer-close").addEventListener("click", function () { dlg.close(); });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+  }
+})();
+</script>
+</body>
+</html>
