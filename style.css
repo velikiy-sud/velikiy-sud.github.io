@@ -260,3 +260,14 @@ dialog.viewer button { position: sticky; top: 0; float: right; font: inherit; ba
   .chronicle li { grid-template-columns: 1fr; gap: 2px; }
   .btn { width: 100%; text-align: center; }
 }
+
+/* ссылки: ТГ игры и Boosty */
+.ico { width: 1.05em; height: 1.05em; vertical-align: -0.17em; margin-right: .4em; filter: drop-shadow(0 0 3px rgba(40, 215, 90, .55)); }
+.status nav a.social { color: var(--bright); }
+.links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+.btn.link { background: transparent; color: var(--bright); box-shadow: none; border-style: dashed; text-shadow: var(--glow); }
+.btn.link:hover { background: var(--bright); color: var(--bg); text-shadow: none; }
+.btn.link:hover .ico { filter: none; }
+.foot-links { display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.foot-links a { color: var(--normal); text-decoration: none; }
+.foot-links a:hover { color: var(--bright); text-decoration: underline; }
