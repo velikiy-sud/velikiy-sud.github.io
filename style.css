@@ -27,6 +27,10 @@
 html[data-theme="purple"] { filter: hue-rotate(140deg) saturate(1.1); }
 html[data-theme="red"]    { filter: hue-rotate(-125deg) saturate(1.2); }
 html[data-theme="blue"]   { filter: hue-rotate(55deg) brightness(1.05); }
+/* просмотрщик кадров рисуется в верхнем слое и не наследует фильтр страницы: повторяем его */
+html[data-theme="purple"] dialog.viewer { filter: hue-rotate(140deg) saturate(1.1); }
+html[data-theme="red"] dialog.viewer    { filter: hue-rotate(-125deg) saturate(1.2); }
+html[data-theme="blue"] dialog.viewer   { filter: hue-rotate(55deg) brightness(1.05); }
 
 * { box-sizing: border-box; }
 
