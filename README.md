@@ -4,8 +4,8 @@
 
 Сайт: https://velikiy-sud.github.io/ · English: https://velikiy-sud.github.io/en/
 
-Скачать игру (1.1): [Windows](download/velikiy-sud-1.1-windows.zip) · [исходники](download/velikiy-sud-1.1-source.zip)
+Скачать игру (1.2): [Windows](download/velikiy-sud-1.2-windows.zip) · [исходники](download/velikiy-sud-1.2-source.zip)
 
-Download (English, 1.1): [Windows](download/the-great-judgement-1.1-windows.zip) · [source](download/the-great-judgement-1.1-source.zip)
+Download (English, 1.2): [Windows](download/the-great-judgement-1.2-windows.zip) · [source](download/the-great-judgement-1.2-source.zip)
 
 Фанатский проект, не связан с командой TNO и Paradox Interactive.
